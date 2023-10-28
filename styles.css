@@ -44,7 +44,7 @@ nav a:hover {
 
 /* Style the intro section */
 .intro-section {
-    background-image: url('/images/intro-1.jpg');
+    background-image: url('./images/intro-1.jpg');
     background-size: cover;
     display: flex;
     justify-content: space-between;
