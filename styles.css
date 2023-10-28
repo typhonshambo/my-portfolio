@@ -225,6 +225,7 @@ nav a:hover {
 }
 
 /* Style the skills and achievements section */
+
 .skills-section {
     background: #f8f8f8;
     padding: 100px 0;
@@ -239,7 +240,8 @@ nav a:hover {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust width */
+    grid-template-rows: repeat(3, 1fr); /* Adjust height */
     grid-gap: 20px;
     justify-items: center;
 }
@@ -264,7 +266,6 @@ nav a:hover {
     max-width: 100%;
     height: auto;
 }
-
 
 /* Style the contact section */
 .contact-section {
