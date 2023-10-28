@@ -245,7 +245,7 @@ nav a:hover {
 
 /* Style the contact section */
 .contact-section {
-    background-image: url('/images/intro-1.jpg');
+    background-image: url('./images/intro-1.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
