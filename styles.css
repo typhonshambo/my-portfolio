@@ -45,7 +45,7 @@ nav a:hover {
 /* Style the intro section */
 .intro-section {
     background-image: url('/images/intro.png');
-    background-size:cover;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     padding: 100px;
@@ -113,7 +113,6 @@ nav a:hover {
 
 
 /* Style the projects section */
-
 .projects-section {
     background: #f8f8f8;
     padding: 100px 0;
@@ -127,9 +126,10 @@ nav a:hover {
 }
 
 .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
 }
 
 .project-card {
@@ -137,13 +137,15 @@ nav a:hover {
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    width: calc(33.33% - 40px); /* Adjust the width based on your layout */
     text-align: center;
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    /* Center items vertically */
+    height: 100%;
+    /* Fill the height of the container */
 }
 
 .project-card:hover {
@@ -152,13 +154,13 @@ nav a:hover {
 
 .project-card img {
     max-width: 100%;
-    height: 200px; /* Adjust the desired height */
-    width: 100%; /* Ensure the image takes the full width of the card */
-    margin-bottom: 10px; /* Add space between the image and title */
+    max-height: 100%;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 .project-card h3 {
-    font-size: 1.5rem; /* Adjust font size for project titles */
+    font-size: 1.5rem;
     color: #333;
     margin: 0;
 }
@@ -179,6 +181,25 @@ nav a:hover {
     background: #ff6600;
 }
 
+
+/* Adjust the vertical alignment of the button */
+.visit-button {
+    margin-top: auto;
+    /* Push the button to the bottom of the card */
+    padding: 10px 20px;
+    background: #ff9900;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+.visit-button:hover {
+    background: #ff6600;
+}
 
 /* Style the skills and achievements section */
 .skills-section {
@@ -242,7 +263,8 @@ form {
     margin: 0 auto;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
