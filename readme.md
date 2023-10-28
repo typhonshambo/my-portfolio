@@ -1,4 +1,5 @@
 # My Portfolio Website
+## NOTE - this website still dont contain all the projects and my skills that i own, I'll update them later (i hope so lol)
 
 Welcome to my personal portfolio website! This project is a single-page website showcasing my skills, achievements, and projects.
 
