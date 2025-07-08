@@ -119,10 +119,11 @@ const Projects: React.FC = () => {
           className="mt-12 text-center"
         >
           <motion.a
-            href="#"
+            href="https://github.com/typhonshambo"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-green-600/20 hover:bg-green-600/30 text-green-400 rounded-lg transition-colors border border-green-500/30 hover:border-green-500/50 font-mono"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-green-600 hover:bg-green-500 text-white rounded-lg transition-all duration-300 border-2 border-green-500 hover:border-green-400 font-mono shadow-lg hover:shadow-green-500/50"
+            style={{ zIndex: 10, position: 'relative' }}
           >
             <Github className="w-5 h-5" />
             View All Projects on GitHub
